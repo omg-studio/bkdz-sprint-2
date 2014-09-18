@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
+	<head>
+		<title>Kid registration | B·KidZanian</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="author" content="KidZania" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="cleartype" content="on" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="apple-mobile-web-app-title" content="B·KidZanian" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!-- ===== Place favicon.ico and apple-touch-icon.png in the root directory ===== -->
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!-- ===== Stylesheets ===== -->
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/vendor/masterslider/masterslider.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/vendor/masterslider/skins/default/style.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/vendor/masterslider/home_slider/style.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/vendor/bxslider/jquery.bxslider.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/vendor/iCheck/flat.css" />
+		<!-- ===== All JavaScript at the bottom except for Modernizr ===== -->
+		<!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body id="bkidzanian" class="registration">
+		<!--[if lt IE 10]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+
+		<div id="viewport">
+			<div id="viewport-inner" class="clearfix">
+				<div class="top-bar">
+					<div class="top-bar-inner">
+						<div class="utility-bar">
+							<div class="utility-bar-inner">
+							</div><!-- /utility-bar-inner -->
+						</div><!-- /utility-bar -->
+						<header class="master-header">
+							<div class="wrap wrap-header clearfix">
+								<a class="brand-master" href="index.html">
+									<img class="logo" src="assets/img/bkidzanian_logo.gif" alt="B·KidZanian - Benefits for better citizens" />
+									<div class="brand-text">
+										<h1 class="logo-name">B·KidZanian</h1>
+										<h2 class="logo-alt">Benefits for better citizens</h2>
+									</div><!-- /brand-text -->
+								</a><!-- /brand-master -->
+								<button id="navbar-toggle" class="hamburger">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar hamburger-bun bun-top"></span>
+									<span class="icon-bar hamburger-patty"></span>
+									<span class="icon-bar hamburger-bun bun-btm"></span>
+								</button><!-- /navbar-toggle -->
+								<nav class="main-nav clearfix">
+									<ul class="nav-menu clearfix">
+										<li class="nav-item">
+											<a href="index.html">Home</a>
+										</li>
+										<li class="nav-item">
+											<a href="about.html">General info</a>
+										</li>
+										<li class="nav-item">
+											<a href="faqs.html">Help</a>
+										</li>
+									</ul>
+								</nav><!-- /main-nav -->
+							</div><!-- /wrap -->
+						</header><!-- /master-header -->
+					</div><!-- /top-bar-inner -->
+				</div><!-- /top-bar -->
+				<div class="master-content">
+					<div class="registration-steps-container kid-registration-container">
+						<div class="wrap wrap-registration clearfix">
+							<div class="steps">
+								<h2 class="heads-up">You are half the way!</h2>
+								<ul class="steps-counter clearfix">
+									<li class="first-step">
+										<a class="step-completed ir" href="parent_registration.html">1</a>
+									</li>
+									<li class="second-step">
+										<a id="current-step" class="ir" href="kid_registration.html">2</a>
+									</li>
+									<li class="last-step">
+										<a class="step-disabled ir" href="my_preferences.html">3</a>
+									</li>
+								</ul><!-- /steps-counter -->
+							</div><!-- /steps -->
+							<form id="kid-registration" method="post" action="#" novalidate>
+								<fieldset class="registration-fields">
+									<legend>Kid registration</legend>
+									<div class="form-row">
+										<div class="form-group">
+											<label for="relationship">Your relationship to the kid</label>
+											<div class="required-container">
+												<div class="select-container-rounded">
+													<select id="relationship" class="required" name="relationship" title="Select relationship" required>
+														<option value="">Select relationship</option>
+														<option value="mom" selected>Mom</option>
+														<option value="dad">Dad</option>
+														<option value="tutor">Tutor</option>
+													</select><!-- /relationship -->
+												</div><!-- /select-container-rounded -->
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									<div class="form-row">
+										<div class="form-group">
+											<label for="kidFirstName">Kid's first name</label>
+											<div class="required-container">
+												<input id="kidFirstName" class="form-control required" type="text" name="kidFirstName" placeholder="Your kid's first name" required />
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									<div class="form-row">
+										<div class="form-group">
+											<label for="kidLastName">Kid's last name</label>
+											<div class="required-container">
+												<input id="kidLastName" class="form-control required" type="text" name="kidLastName" placeholder="Your kid's last name" required />
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									<div class="form-row birthday-group clearfix">
+										<div class="form-group clearfix">
+											<label class="clearfix">Kid's birthday <span class="max-age">(17 and under)</span></label>
+											<div class="required-container required-group-container clearfix">
+												<div class="select-container-outer container-outer-day">
+													<div class="select-container-rounded">
+														<select id="day" class="required" name="day" title="Full date of birth is required" required>
+															<option class="default" value="">Day</option>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+															<option value="11">11</option>
+															<option value="12">12</option>
+															<option value="13">13</option>
+															<option value="14">14</option>
+															<option value="15">15</option>
+															<option value="16">16</option>
+															<option value="17">17</option>
+															<option value="18">18</option>
+															<option value="19">19</option>
+															<option value="20">20</option>
+															<option value="21">21</option>
+															<option value="22">22</option>
+															<option value="23">23</option>
+															<option value="24">24</option>
+															<option value="25">25</option>
+															<option value="26">26</option>
+															<option value="27">27</option>
+															<option value="28">28</option>
+															<option value="29">29</option>
+															<option value="30">30</option>
+															<option value="31">31</option>
+														</select><!-- /day -->
+													</div><!-- /select-container-rounded -->
+												</div><!-- /select-container-outer -->
+												<div class="select-container-outer container-outer-month">
+													<div class="select-container-rounded">
+														<select id="month" class="required" name="month" title="Full date of birth is required" required>
+															<option value="">Month</option>
+															<option value="1">January</option>
+															<option value="2">February</option>
+															<option value="3">March</option>
+															<option value="4">April</option>
+															<option value="5">May</option>
+															<option value="6">June</option>
+															<option value="7">July</option>
+															<option value="8">August</option>
+															<option value="9">September</option>
+															<option value="10">October</option>
+															<option value="11">November</option>
+															<option value="12">December</option>
+														</select><!-- /month -->
+													</div><!-- /select-container-rounded -->
+												</div><!-- /select-container-outer -->
+												<div class="select-container-outer container-outer-year">
+													<div class="select-container-rounded">
+														<select id="year" class="required" name="year" title="Full date of birth is required" required>
+															<option value="">Year</option>
+															<option value="2014">2014</option>
+															<option value="2013">2013</option>
+															<option value="2012">2012</option>
+															<option value="2011">2011</option>
+															<option value="2010">2010</option>
+															<option value="2009">2009</option>
+															<option value="2008">2008</option>
+															<option value="2007">2007</option>
+															<option value="2006">2006</option>
+															<option value="2005">2005</option>
+															<option value="2004">2004</option>
+															<option value="2003">2003</option>
+															<option value="2002">2002</option>
+															<option value="2001">2001</option>
+															<option value="2000">2000</option>
+															<option value="1999">1999</option>
+															<option value="1998">1998</option>
+															<option value="1997">1997</option>
+														</select><!-- /year -->
+													</div><!-- /select-container-rounded -->
+												</div><!-- /select-container-outer -->
+											</div><!-- /required-container -->
+											<div class="group-error-container clearfix"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									<div class="form-row">
+										<div class="form-group">
+											<label for="gender">Kid's Gender</label>
+											<div class="required-container">
+												<div class="select-container-rounded">
+													<select id="gender" class="required" name="gender" title="Select gender" required>
+														<option value="">Select kid's gender</option>
+														<option value="girl" selected>Girl</option>
+														<option value="boy">Boy</option>
+													</select><!-- /gender -->
+												</div><!-- /select-container-rounded -->
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									<div class="form-row">
+										<div class="form-group">
+											<label for="countryResidence">Kid's country of residence</label>
+											<div class="required-container">
+												<div class="select-container-rounded">
+													<select id="countryResidence" class="required" name="countryResidence" title="Select country of residance" required>
+														<option value="">Select country</option>
+														<option value="mex" selected>Mexico</option>
+													</select><!-- /countryResidence -->
+												</div><!-- /select-container-rounded -->
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									<div class="form-row">
+										<div class="form-group">
+											<label for="birth">Kid's country of birth</label>
+											<div class="required-container">
+												<div class="select-container-rounded">
+													<select id="birth" class="required" name="birth" title="Select country of birth" required>
+														<option value="">Select country</option>
+														<option value="mex" selected>Mexico</option>
+													</select><!-- /birth -->
+												</div><!-- /select-container-rounded -->
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+								</fieldset>
+								<fieldset class="rights-keeper-fields">
+									<legend class="login-legend">Choose a rights keeper</legend>
+									<div class="rights-keeper-container">
+										<ul class="rights-keeper-slider clearfix">
+											<li class="slide">
+												<a href="#">
+													<img class="img-responsive" src="assets/img/rk-avatar-1.gif" alt="" />
+												</a>
+											</li>
+											<li class="slide">
+												<a href="#">
+													<img class="img-responsive" src="assets/img/rk-avatar-2.gif" alt="" />
+												</a>
+											</li>
+											<li class="slide">
+												<a href="#">
+													<img class="img-responsive" src="assets/img/rk-avatar-3.gif" alt="" />
+												</a>
+											</li>
+											<li class="slide">
+												<a href="#">
+													<img class="img-responsive" src="assets/img/rk-avatar-4.gif" alt="" />
+												</a>
+											</li>
+										</ul><!-- /rights-keeper-slider -->
+									</div><!-- /rights-keeper-container -->
+									<div class="kid-tokens-container">
+										<div class="form-row">
+											<div class="form-group">
+												<label for="kidUsername">Kid's username</label>
+												<div class="required-container">
+													<input id="kidUsername" class="form-control required" type="text" name="kidUsername" placeholder="Create a user name" maxlength="50" required />
+												</div><!-- /required-container -->
+												<div class="error-container"></div>
+											</div><!-- /form-group -->
+										</div><!-- /form-row -->
+										<div class="form-row">
+											<div class="form-group">
+												<label for="kidPassword">Kid's password</label>
+												<div class="required-container">
+													<input id="kidPassword" class="form-control required" type="password" name="kidPassword" placeholder="Create a clever password" maxlength="16" required />
+												</div><!-- /required-container -->
+												<div class="error-container"></div>
+											</div><!-- /form-group -->
+										</div><!-- /form-row -->
+										<div class="form-row">
+											<div class="form-group">
+												<label for="kidPasswordConfirm">Confirm password</label>
+												<div class="required-container">
+													<input id="kidPasswordConfirm" class="form-control required" type="password" name="kidPasswordConfirm" placeholder="Create a clever password" maxlength="16" required />
+												</div><!-- /required-container -->
+												<div class="error-container"></div>
+											</div><!-- /form-group -->
+										</div><!-- /form-row -->
+									</div><!-- /kid-tokens-container -->
+									<div class="form-row save-continue-container">
+										<!-- div class="form-group" -->
+											<button id="step-3" class="btn btn-default save-continue" type="submit" disabled>Save & print</button>
+										<!-- /div --><!-- /form-group -->
+									</div><!-- /form-row -->
+									<!-- div class="form-row save-continue-container">
+										<button id="add-kid" class="btn btn-secondary" type="button" disabled>Add another kid</button>
+									</div --><!-- /form-row -->
+								</fieldset>
+							</form><!-- /parent-registration -->
+						</div><!-- /wrap -->
+					</div><!-- /registration-steps-container -->
+				</div><!-- /master-content -->
+				<footer class="master-footer">
+					<div class="wrap clearfix">
+						<div class="wrap-inner clearfix">
+							<div class="ftr-divisions frame clearfix">
+								<div class="kidzania-logo-ftr ftr-division span-4">
+									<div class="span-inner">
+										<!-- h4 class="invisible">KidZania</h4 -->
+										<a class="kidzania-logo ir" href="http://www.kidzania.com/">KidZania</a>
+									</div><!-- /span-inner -->
+								</div><!-- / -->
+								<div class="info-menu-ftr ftr-division span-4">
+									<div class="span-inner">
+										<h4>General Info</h4>
+										<ul>
+											<li>
+												<a href="citizenship_levels.html">CitiZenship levels</a>
+											</li>
+											<li>
+												<a href="member_guide.html">Program rules</a>
+											</li>
+											<li>
+												<a href="#">Privacy policy</a>
+											</li>
+										</ul>
+									</div><!-- /span-inner -->
+								</div><!-- /info-menu-ftr -->
+								<div class="help-menu-ftr ftr-division span-4">
+									<div class="span-inner">
+										<h4>Help</h4>
+										<ul>
+											<li>
+												<a href="contact.html">Contact</a>
+											</li>
+											<li>
+												<a href="faqs.html">FAQs</a>
+											</li>
+											<li>
+												<a href="#">My preferences</a>
+											</li>
+										</ul>
+									</div><!-- /span-inner -->
+								</div><!-- /help-menu-ftr -->
+								<div class="social-media-ftr ftr-division span-4">
+									<div class="span-inner">
+										<h4>Social Media</h4>
+										<ul>
+											<li>
+												<a href="#">Facebook</a>
+											</li>
+											<li>
+												<a href="#">Twitter</a>
+											</li>
+											<li>
+												<a href="#">YouTube</a>
+											</li>
+										</ul>
+									</div><!-- /span-inner -->
+								</div><!-- /social-media-ftr -->
+							</div><!-- /ftr-divisions -->
+							<div class="copyright">
+								<p>&copy; 2014, KidZania, and all related characters and elements are trademarks of KidZania de México S.A. de C.V. All Rights Reserved. <!-- a href="#">Privacy Policy</a></p -->
+							</div><!-- /copyright -->
+						</div><!-- /wrap-inner -->
+					</div><!-- /wrap -->
+					<div id="scroll-top">
+						<a class="ir" href="#">Top</a>
+					</div><!-- /scroll-top -->
+				</footer><!-- /master-footer -->
+			</div><!-- /viewport-inner -->
+		</div><!-- /viewport -->
+
+
+		<!-- ===== JavaScript ===== -->
+		<!-- script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script -->
+		<!-- script type="text/javascript">window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.0.min.js"><\/script>')</script -->
+		<script type="text/javascript" src="assets/js/vendor/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="assets/js/plugins.js"></script>
+		<script type="text/javascript" src="assets/js/vendor/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="assets/js/vendor/masterslider/masterslider.min.js"></script>
+		<script type="text/javascript" src="assets/js/vendor/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="assets/js/vendor/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="assets/js/vendor/icheck.min.js"></script>
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body><!-- /bkidzanian -->
+</html>
